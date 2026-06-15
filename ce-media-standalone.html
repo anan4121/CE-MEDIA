@@ -45,7 +45,7 @@ nav.scrolled{background:rgba(246,243,238,.96);backdrop-filter:blur(12px);padding
 .nav-hamburger span{display:block;width:22px;height:2px;background:var(--text)}
 
 /* HERO */
-.hero{position:relative;height:100vh;min-height:640px;display:flex;align-items:flex-end;padding-bottom:80px;overflow:hidden}
+.hero{position:relative;height:120vh;min-height:640px;display:flex;align-items:flex-end;padding-bottom:80px;overflow:hidden}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(17,17,17,.88) 0%,rgba(17,17,17,.35) 55%,rgba(17,17,17,.1) 100%);z-index:1}
 .hero-content{position:relative;z-index:2;color:var(--white)}
@@ -80,8 +80,7 @@ nav.scrolled{background:rgba(246,243,238,.96);backdrop-filter:blur(12px);padding
 .about-num-val{font-size:32px;font-weight:800}
 .about-num-val.accent{color:var(--accent)}
 .about-num-label{font-size:12px;opacity:.4;margin-top:4px;letter-spacing:.5px}
-.about-img{background:#e0dbd3;aspect-ratio:4/3;overflow:hidden;position:relative;border:6px solid var(--accent)}
-.about-img img{width:100%;height:100%;object-fit:cover;display:block}
+.about-img{background:#e0dbd3;aspect-ratio:4/3;overflow:hidden;position:relative}
 .about-img-inner{width:100%;height:100%;background:linear-gradient(135deg,#e8e3dc,#ccc5bc);display:flex;align-items:center;justify-content:center}
 .about-img-inner span{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;opacity:.25}
 
@@ -335,9 +334,8 @@ footer{background:var(--dark);padding:80px 0 40px}
       <div class="brand-item">TikTok Shop</div>
       <div class="brand-item">ELEP Agency</div>
       <div class="brand-item">ILA Vietnam</div>
-      <div class="brand-item">Vingroup</div>
-      <div class="brand-item">Shopee</div>
-      <div class="brand-item">Lazada</div>
+      <div class="brand-item">THE 350F</div>
+      <div class="brand-item">ENSURE GOLD</div>
     </div>
   </div>
 </section>
@@ -352,14 +350,14 @@ footer{background:var(--dark);padding:80px 0 40px}
         <h2 class="about-title">CE Media là đối tác chiến lược trong lĩnh vực <em>Entertainment</em>, <em>Influencer Marketing</em> và <em>Social Media</em>.</h2>
         <p class="about-body">Chúng tôi là đội ngũ chuyên gia với nhiều năm kinh nghiệm trong ngành truyền thông số và giải trí. Từ chiến lược đến thực thi, CE Media đồng hành cùng thương hiệu ở mọi bước đi.</p>
         <div class="about-numbers">
-          <div><div class="about-num-val accent">2020</div><div class="about-num-label">Năm thành lập</div></div>
-          <div><div class="about-num-val">50+</div><div class="about-num-label">Chuyên gia</div></div>
-          <div><div class="about-num-val">6</div><div class="about-num-label">Verticals</div></div>
+          <div><div class="about-num-val accent">2026</div><div class="about-num-label">Năm thành lập</div></div>
+          <div><div class="about-num-val">300+</div><div class="about-num-label">Kênh đối tác</div></div>
+          <div><div class="about-num-val">4</div><div class="about-num-label">Nhãn hàng</div></div>
         </div>
       </div>
-      <!-- ĐỔI ẢNH ABOUT: thêm hình DSC00285.jpg -->
+      <!-- ĐỔI ẢNH ABOUT: thay div bên dưới bằng <img src="..." alt="..."/> -->
       <div class="about-img reveal delay-2">
-        <img src="https://raw.githubusercontent.com/anan4121/CE-MEDIA/main/DSC00285.jpg" alt="CE Media Team"/>
+        <div class="about-img-inner"><span>CE Media</span></div>
       </div>
     </div>
   </div>
@@ -449,15 +447,11 @@ footer{background:var(--dark);padding:80px 0 40px}
     <div class="marquee-item"><span class="marquee-word">Education</span><span class="marquee-dot"></span></div>
     <div class="marquee-item"><span class="marquee-word">Beauty</span><span class="marquee-dot"></span></div>
     <div class="marquee-item"><span class="marquee-word">Entertainment</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-word">Gaming</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-word">Finance</span><span class="marquee-dot"></span></div>
     <div class="marquee-item"><span class="marquee-word">Food</span><span class="marquee-dot"></span></div>
     <div class="marquee-item"><span class="marquee-word">Lifestyle</span><span class="marquee-dot"></span></div>
     <div class="marquee-item"><span class="marquee-word">Education</span><span class="marquee-dot"></span></div>
     <div class="marquee-item"><span class="marquee-word">Beauty</span><span class="marquee-dot"></span></div>
     <div class="marquee-item"><span class="marquee-word">Entertainment</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-word">Gaming</span><span class="marquee-dot"></span></div>
-    <div class="marquee-item"><span class="marquee-word">Finance</span><span class="marquee-dot"></span></div>
     <div class="marquee-item"><span class="marquee-word">Food</span><span class="marquee-dot"></span></div>
   </div>
 </section>
@@ -624,23 +618,6 @@ footer{background:var(--dark);padding:80px 0 40px}
   </div>
 </section>
 
-<!-- ============ AGENCY REEL ============ -->
-<section class="reel">
-  <div class="container">
-    <p class="reel-label reveal">Agency Reel</p>
-    <h2 class="reel-title reveal">CE Media<br/>Reel 2026</h2>
-    <!-- ĐỔI VIDEO REEL: thay URL trong <source src="..."> bên dưới -->
-    <div class="reel-wrap reveal" id="reelWrap">
-      <video class="reel-video" id="reelVideo" muted loop>
-        <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260606_131516_eca35265-ea66-4fbd-8d52-22aae6e1a503.mp4" type="video/mp4"/>
-      </video>
-      <div class="reel-play-overlay" id="reelPlay">
-        <div class="reel-play-circle">&#9654;</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ CONTACT CTA ============ -->
 <section class="cta-section" id="contact">
   <div class="container">
@@ -680,7 +657,6 @@ footer{background:var(--dark);padding:80px 0 40px}
           <li><a href="#about">Về Chúng Tôi</a></li>
           <li><a href="#cases">Dự Án</a></li>
           <li><a href="#">Creator Network</a></li>
-          <li><a href="#">Tuyển Dụng</a></li>
         </ul>
       </div>
       <div>
@@ -689,8 +665,6 @@ footer{background:var(--dark);padding:80px 0 40px}
           <!-- ĐỔI EMAIL FOOTER bên dưới -->
           <li><a href="mailto:phtrinh.le@gmail.com">phtrinh.le@gmail.com</a></li>
           <li><a href="#">Ho Chi Minh City, VN</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">TikTok</a></li>
         </ul>
       </div>
     </div>
